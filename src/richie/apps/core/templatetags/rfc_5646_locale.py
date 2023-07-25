@@ -18,7 +18,8 @@ def rfc_5646_locale(value):
         value_locale = value[:2].lower() + "-" + value[3:].capitalize()  # noqa
     else:
         value_locale = value.lower()
-    print (value_locale)
+    print ("***********************" + value_locale)
+    print (RFC_5646_LOCALES)
     # pylint: disable=unsupported-membership-test
     if value_locale in RFC_5646_LOCALES:
         return value_locale
