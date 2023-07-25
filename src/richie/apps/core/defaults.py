@@ -50,7 +50,7 @@ for site_language in LANGUAGES_DICT:
 # regions.
 RFC_5646_LOCALES = lazy(
     lambda: getattr(
-        settings, "RFC_5646_LOCALES", ["en-US", "es-ES", "pt-PT", "fr-FR", "fr-CA",'zh-Hant']
+        settings, "RFC_5646_LOCALES", ["en-US", "es-ES", "pt-PT", "fr-FR", "fr-CA",'zh','zh-Hant','zh-Hans']
     ),
     list,
 )()
