@@ -15,7 +15,7 @@ def rfc_5646_locale(value):
     This will allow us to use this locale on the <html lang> attribute directly.
     """
     if "_" in value or "-" in value:
-        value_locale = value[:2].lower() + "-" + value[3:].upper()  # noqa
+        value_locale = value[:2].lower() + "-" + value[3:].capitalize()  # noqa
     else:
         value_locale = value.lower()
     print (value_locale)
